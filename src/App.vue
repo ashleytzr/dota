@@ -28,10 +28,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
 }
 
-html, body {
-  overflow-x: hidden;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -40,14 +36,17 @@ html, body {
   color: white;
 }
 
-.container {
-  padding: 2% 4%;
+body {
   background-image:
     linear-gradient(
       to bottom left,
       #6b7b85,
       #1f262c 65%
     );
+}
+
+.container {
+  padding: 2% 4%;
 }
 
 
