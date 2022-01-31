@@ -12,18 +12,40 @@
 </script>
 
 <style scoped>
-    header {
-        display: flex;
+    @media only screen and (min-width: 370px) {
+        header {
+            display: flex;
+            margin: 0.5rem 0;
+        }
+
+        img {
+            margin: 0 0.7rem;
+            width: 2rem;
+        }
+
+        h1 {
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+        }
+
     }
 
-    img {
-        margin: 0 1.2rem;
-        width: 4.5rem;
-    }
+    @media only screen and (min-width: 992px) {
+        header {
+            display: flex;
+        }
 
-    h1 {
-        font-size: 1.8rem;
-        display: flex;
-        align-items: center;
+        img {
+            margin: 0 1.2rem;
+            width: 4.5rem;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+        }
     }
+    
 </style>

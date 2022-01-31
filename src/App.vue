@@ -28,6 +28,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -43,6 +47,8 @@ export default {
       to bottom left,
       #6b7b85,
       #1f262c 65%
-    )
+    );
 }
+
+
 </style>

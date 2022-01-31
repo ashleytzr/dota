@@ -71,53 +71,110 @@ export default {
 </script>
 
 <style scoped>
-header h1 {
-    letter-spacing: 0.09rem;
-    font-size: 2.5rem;
-    margin: 1.9rem;
-    text-align: center;
+@media only screen and (min-width: 370px) {
+    header h1 {
+        letter-spacing: 0.09rem;    
+        font-size: 1.2rem;
+        margin: 1rem auto;
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .hero-data img {
+        width: 100px;
+        border-radius: 10px;
+    }
+
+    table {
+        margin: 0.8rem auto;
+    }
+
+    table th {
+        font-size: 1rem;
+    }
+
+    table td, table th {
+        text-align: center;
+        padding: 0.5rem 0.5rem;
+    }
+
+    tr:nth-child(even) {
+        background-color: #6b7b85;
+    }
+
+    tr:nth-child(odd):not(tr:first-child) {
+        background-color: #1f262c;
+    }
+
+    table tr:first-child td:first-child {
+        border-top-left-radius: 10px;
+    }
+
+    table tr:first-child td:last-child {
+        border-top-right-radius: 10px;
+    }
+
+    table tr:last-child td:first-child {
+        border-bottom-left-radius: 10px;
+    }
+
+    table tr:last-child td:last-child {
+        border-bottom-right-radius: 10px;
+    }
+
 }
 
-table {
-    margin: 1rem auto;
+@media only screen and (min-width: 992px) {
+    header h1 {
+        letter-spacing: 0.09rem;    
+        font-size: 2.5rem;
+        margin: 1.9rem;
+        text-align: center;
+    }
+
+    table {
+        margin: 1rem auto;
+    }
+
+    table th {
+        padding: 1rem 1rem;
+        font-size: 1.5rem;
+    }
+
+    table td, table th {
+        text-align: center;
+        padding: 1.3rem 1rem;
+    }
+
+    tr:nth-child(even) {
+        background-color: #6b7b85;
+    }
+
+    tr:nth-child(odd):not(tr:first-child) {
+        background-color: #1f262c;
+    }
+
+    table tr:first-child td:first-child {
+        border-top-left-radius: 10px;
+    }
+
+    table tr:first-child td:last-child {
+        border-top-right-radius: 10px;
+    }
+
+    table tr:last-child td:first-child {
+        border-bottom-left-radius: 10px;
+    }
+
+    table tr:last-child td:last-child {
+        border-bottom-right-radius: 50px;
+    }
+
+    .hero-data img {
+        width: 200px;
+        border-radius: 10px;
+    }
 }
 
-table th {
-    padding: 1rem 1rem;
-    font-size: 1.5rem;
-}
 
-table td, table th {
-    text-align: center;
-    padding: 1.3rem 1rem;
-}
-
-tr:nth-child(even) {
-    background-color: #6b7b85;
-}
-
-tr:nth-child(odd):not(tr:first-child) {
-    background-color: #1f262c;
-}
-
-table tr:first-child td:first-child {
-    border-top-left-radius: 10px;
-}
-
-table tr:first-child td:last-child {
-    border-top-right-radius: 10px;
-}
-
-table tr:last-child td:first-child {
-    border-bottom-left-radius: 10px;
-}
-
-table tr:last-child td:last-child {
-    border-bottom-right-radius: 50px;
-}
-
-.hero-data img {
-    width: 200px;
-    border-radius: 10px;
-}
 </style>
