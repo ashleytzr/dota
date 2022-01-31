@@ -12,4 +12,4 @@ You can view the project [here](https://scantist-dota.herokuapp.com/).
 1. Download files from this repository 
 2. Open command line
 3. Change directory to path where you've downloaded the codes to
-4. In dotaapp folder, enter `npm start 
+4. In dotaapp folder, enter `npm start`
